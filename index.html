@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>מעביר אותך</title>
+
+    <script>
+        // כאן שמים את הקישור פעם אחת בלבד
+        const redirectURL = "https://reembir.com";
+
+        // העברה אוטומטית
+        window.location.href = redirectURL;
+    </script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>מעביר אותך...</h1>
+        <p>אם לא הועברת תוך מספר שניות, 
+            <a id="link">לחץ כאן</a>.
+        </p>
+    </div>
+
+    <script>
+        // הכנסת הקישור גם לכפתור הידני
+        document.getElementById("link").href = redirectURL;
+    </script>
+</body>
+</html>
